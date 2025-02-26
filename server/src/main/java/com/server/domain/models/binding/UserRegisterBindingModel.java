@@ -1,10 +1,10 @@
 package com.server.domain.models.binding;
-
+import org.springframework.web.bind.annotation.*;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
-
+@CrossOrigin(origins = "http://localhost:3000") 
 public class UserRegisterBindingModel {
     private String username;
     private String email;
